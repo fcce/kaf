@@ -18,8 +18,7 @@ jobs:
 
     - name: Get dependencies
       run: |
-          export GO111MODULE=on
-          go mod verify
+          export GO111MODULE=on && go mod verify
 
     - name: Build
       run: go build -v .
